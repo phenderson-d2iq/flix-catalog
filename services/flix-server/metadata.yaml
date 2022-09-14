@@ -5,6 +5,7 @@ category:
 type: catalog
 scope:
   - project
+  - workspace
 overview: |-
   # Overview
   Flix is a story development hub designed to promote and enhance fast-paced creative collaboration across departments and locations.
