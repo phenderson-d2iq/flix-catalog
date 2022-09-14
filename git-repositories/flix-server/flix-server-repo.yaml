@@ -6,6 +6,6 @@ metadata:
   namespace: ${releaseNamespace}
 spec:
   interval: 10m0s
-  url: https://github.com/phenderson-d2iq/flix-server-chart
+  url: https://phenderson-d2iq.github.io/flix-server-chart
   ref:
     branch: master
