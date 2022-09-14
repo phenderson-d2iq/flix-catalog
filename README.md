@@ -3,13 +3,13 @@
 To add this to a project simply create a gitrepository resource as shown below to the given project
 
 ```
-export PROJECT=customcatalogdemo
+export PROJECT=flixdemo
 
 kubectl apply -f - <<EOF
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: demo-project-repo
+  name: flix-demo-repo
   namespace: ${PROJECT}
   labels:
     kommander.d2iq.io/gitapps-gitrepository-type: catalog
@@ -19,7 +19,7 @@ spec:
   ref:
     branch: master
   timeout: 20s
-  url: https://github.com/arbhoj/kommander-catalog.git
+  url: https://github.com/phenderson-d2iq/kommander-catalog
 EOF
 
 ``` 
