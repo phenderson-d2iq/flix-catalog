@@ -21,7 +21,7 @@ spec:
   upgrade:
     remediation:
       retries: 30
-  releaseName: flix-server
+  releaseName: flix-database
   valuesFrom:
     - kind: ConfigMap
       name: flix-database-6.4.1-defaults
