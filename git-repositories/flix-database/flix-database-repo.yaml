@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: flix-database-repo
+  namespace: ${releaseNamespace}
+spec:
+  interval: 10m0s
+  url: https://github.com/phenderson-d2iq/flix-database-chart
+  ref:
+    branch: master
