@@ -9,7 +9,7 @@ kubectl apply -f - <<EOF
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: flix-demo-repo
+  name: flix-catalog-repo
   namespace: ${PROJECT}
   labels:
     kommander.d2iq.io/gitapps-gitrepository-type: catalog
@@ -26,5 +26,5 @@ EOF
 
 Here is a screenshot of the custom catalogs in the DKP Dashboard
 
-![Kommander Portal With Custom Catalog Item](./Custom_Catalog_2.1.1.png)
+![Kommander Portal With Custom Catalog Item](./image.png)
 
