@@ -19,7 +19,7 @@ spec:
   ref:
     branch: master
   timeout: 20s
-  url: https://github.com/phenderson-d2iq/kommander-catalog
+  url: https://github.com/phenderson-d2iq/flix-catalog
 EOF
 
 ``` 
