@@ -1,5 +1,7 @@
 ## This is a custom catalog for the Flix Application for Kommander
 
+![Flix Catalog](./image.png)
+
 To add this catalog to a Kommander Essentials cluster run the following:
 
 ```
@@ -44,8 +46,4 @@ spec:
 EOF
 
 ``` 
-
-Here is a screenshot of Flix Applications in the Kommander Dashboard:
-
-![Kommander Portal With Custom Catalog Item](./image.png)
 
