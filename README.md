@@ -1,6 +1,27 @@
-## This is a demo custom catalog repo for DKP 2.1.1 +
+## This is a custom catalog for the Flix Application for Kommander
 
-To add this to a project simply create a gitrepository resource as shown below to the given project
+To add this catalog to a Kommander Essentials cluster run the following:
+
+```
+kubectl apply -f - <<EOF
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: flix-catalog-repo
+  namespace: kommander
+  labels:
+    kommander.d2iq.io/gitapps-gitrepository-type: catalog
+    kommander.d2iq.io/gitrepository-type: catalog
+spec:
+  interval: 1m0s
+  ref:
+    branch: master
+  timeout: 20s
+  url: https://github.com/phenderson-d2iq/flix-catalog
+EOF
+```
+
+To add this catalog to a Kommander Enterprise cluster, you will first need to make the project namespace in the Kommander UI. Once you have the project created run the following but replace `flixdemo` with your project namespace:
 
 ```
 export PROJECT=flixdemo
@@ -24,7 +45,7 @@ EOF
 
 ``` 
 
-Here is a screenshot of the custom catalogs in the DKP Dashboard
+Here is a screenshot of Flix Applications in the Kommander Dashboard:
 
 ![Kommander Portal With Custom Catalog Item](./image.png)
 
